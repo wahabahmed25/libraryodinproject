@@ -1,0 +1,107 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(#ff4a1d, #faad73);
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.header h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    text-align: center;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+#bookInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+#bookInfo label {
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+#bookInfo input {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s ease;
+}
+
+button.submit {
+    background-color: #000000;
+    color: white;
+}
+
+button.submit:hover {
+    background-color: #5b5b5b;
+}
+
+button.reset {
+    background-color: #f44336;
+    color: white;
+}
+
+button.reset:hover {
+    background-color: #e31a0f;
+}
+
+button.library {
+    margin-bottom: 20px;
+    background-color: #fc7d29;
+    color: white;
+    display: block;
+    width: 100px;
+    margin-top: 10px;
+    position: relative;
+    left: 70%;    
+}
+
+button.library:hover {
+    background-color: red;
+}
+
+/* Add these styles to your existing styles */
+.hidden {
+    visibility: hidden; /* Keep the space but hide the element */
+}
